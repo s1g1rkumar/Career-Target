@@ -1,1 +1,647 @@
 /* this is css of main page  */
+
+
+   /* variables of css */
+   :root{
+       --border:1px solid black;
+       --color1:#00F6FF;
+       --color2:#2007FC;
+       --color3:#022587;
+       --color4:#CC1515;
+       --color5:#801B01;
+       --color6:white;
+       --color7:black;
+       --text-shadow: 0.2px 5px 10px gray;
+
+   }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mybody{
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(var(--color1),var(--color2),var(--color3));
+
+    /* background: radial-gradient(circle, red, yellow, green); */
+}
+
+/* design fixed part */
+.fixed-part{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    border: var(--border);
+    position: fixed;
+    /* background-image: radial-gradient(circle, red, yellow, green); */
+    /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
+
+}
+/* fixed part header design code is here */
+.fixed-part-header{
+    position: fixed;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 5.5vw 45px 5.5vw;
+}
+.fixed-part-header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fixed-part-header nav li{
+    list-style: none;
+    /* border: var(--border); */
+    margin: 0 2vw 0 2vw;
+}
+.fixed-part-header nav li a{
+    text-shadow: var(--text-shadow);
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: bold;
+}
+#sign-up-id{
+    background-color: var(--color4);
+    border-radius: 5vw;
+    padding:1vw 1.5vw 1vw 1.5vw;
+    text-shadow: var(--text-shadow);
+}
+
+/* end ... fixed part header design code is here */
+
+
+/* start fixed scroll part design here  */
+
+.fixed-part-scroll-btns{
+    position: fixed;
+   
+
+}
+.fixed-part-scroll{
+   z-index: 25;
+    position: fixed;
+    right: 5vw;
+    width: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 50px gray;
+    height: 20px;
+    background-image: radial-gradient(var(--color1),var(--color2),#020c25);
+    
+}
+.btn1{
+    top: 40vh;
+    
+    transform: translate(-50%,-50%);
+
+}
+ .btn1:hover::before{
+    z-index: 25;
+    content: "HOME";
+    font-size: 15px;
+    position: absolute;
+    color: var(--color6);
+    font-weight: bold;
+    top: -3px;
+    left: -96px;
+    box-shadow: var(--text-shadow);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: var(--color4);
+   }
+    
+
+.btn2{
+    top: 48vh;
+    transform: translate(-50%,-50%);
+
+}
+.btn2:hover::before{
+  z-index: 25;
+    content: "ABOUT";
+    font-size: 15px;
+    position: absolute;
+    color: var(--color6);
+    font-weight: bold;
+    top: -3px;
+    left: -102px;
+    box-shadow: var(--text-shadow);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: var(--color4);
+    
+}
+.btn3{
+    top:56vh;
+    transform: translate(-50%,-50%);
+
+}
+.btn3:hover::before{
+  z-index: 25;
+    content: "SERVICES";
+    font-size: 15px;
+    position: absolute;
+    color: var(--color6);
+    font-weight: bold;
+    top: -3px;
+    left: -120px;
+    box-shadow: var(--text-shadow);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: var(--color4);
+    
+}
+.btn4{
+    top: 64vh;
+    transform: translate(-50%,-50%);
+
+}
+.btn4:hover::before{
+  z-index: 25;
+    content: "CONTACT";
+    font-size: 15px;
+    position: absolute;
+    color: var(--color6);
+    font-weight: bold;
+    top: -3px;
+    left: -116px;
+    box-shadow: var(--text-shadow);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: var(--color4);
+    
+}
+/* end fixed scroll part design here ................................ */
+
+
+
+
+
+/* home page section css part here ...........................................*/
+
+.home-page{
+  visibility: hidden;
+    /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
+
+    
+    /* width: 100vw;
+    height: 100vh; */
+}
+.home-page-part{
+    position: relative;
+}
+/* .home-page-part-circle-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}  */
+.home-page-part-circle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 1500px;
+    background-image: radial-gradient(var(--color1),var(--color2),#020c25);
+}
+.circles1{
+    top: 22vh;
+    left: 10vw;
+    height: 250px;
+    width: 250px;
+   animation: moves1 2s linear 0s infinite;
+}
+@keyframes moves1{
+    50%{top: 19vh;}
+    75%{top: 25vh;}
+    100%{top: 22vh;}
+}
+.circles2{
+    top: 70vh;
+    left: 5vw;
+   animation: moves2 2s linear 1s infinite;
+
+}
+@keyframes moves2{
+    50%{top: 63vh;}
+    75%{top: 75vh;}
+    100%{top: 70vh;}
+}
+.circles3{
+    top: 72vh;
+    left: 52vw;
+    height: 200px;
+    width: 200px;
+   animation: moves3 2s linear 0.5s infinite;
+
+}
+@keyframes moves3{
+    50%{top: 69vh;}
+    75%{top: 75vh;}
+    100%{top: 72vh;}
+}
+.circles4{
+    top: 26vh;
+    left: 65vw;
+    height: 180px;
+    width: 180px;
+   animation: moves4 2s linear 2.7s infinite;
+
+}
+@keyframes moves4{
+    50%{top: 23vh;}
+    75%{top: 29vh;}
+    100%{top: 26vh;}
+}
+.circles5{
+    top: 75vh;
+    left: 85vw;
+   animation: moves5 2s linear 2.5s infinite;
+
+}
+@keyframes moves5{
+    50%{top: 72vh;}
+    75%{top: 78vh;}
+    100%{top: 75vh;}
+}
+.circles6{
+    top: 15vh;
+   left: 3vw;
+   height: 100px;
+   width: 100px;
+   animation: moves6 2s linear 2.3s infinite;
+
+}
+@keyframes moves6{
+    50%{top: 14vh;}
+    75%{top: 18vh;}
+    100%{top: 15vh;}
+}
+.first-heading-btn{
+  
+    position: absolute;
+    z-index: 10;
+    top: 50vh;
+    left: 50vw;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+}
+.first-heading-btn h1{
+    font-size: 6vw;
+    color: var(--color6);
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    line-height: 6vw;
+   
+}
+
+/* .first-heading-btn a{
+   border: var(--border);
+   text-decoration: none;
+   font-weight: bold;
+   background-color: var(--color4);
+   
+   padding: 5px 10px 5px 10px;
+   
+} */
+/* bubble button code here */
+
+.bubbly-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    background-color:var(--color4);
+    color: var(--color6);
+    border-radius: 400px;
+    border: none;
+    text-shadow: var(--text-shadow);
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
+    transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s, -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
+    -webkit-box-shadow: 0 2px 25px gray;
+            box-shadow: 0 2px 25px gray;
+  }
+
+.bubbly-button:focus {
+    outline: 0;
+  }
+  
+  .bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+.bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--color4) 20%, transparent 30%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  
+.bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  
+.bubbly-button:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    background-color: var(--color5);
+    -webkit-box-shadow: 0 2px 25px gray;
+            box-shadow: 0 2px 25px gray;
+  }
+  
+.bubbly-button.animate:before {
+    display: block;
+    -webkit-animation: topBubbles ease-in-out 0.75s forwards;
+            animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  
+.bubbly-button.animate:after {
+    display: block;
+    -webkit-animation: bottomBubbles ease-in-out 0.75s forwards;
+            animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  
+  @-webkit-keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @-webkit-keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+
+  #login-btn-heading{
+      margin-left: 25px;
+      background-color: var(--color5);
+  }
+/* end home page section css part here............................. */
+
+
+
+/* home page css code is here................................................ */
+
+.about
+{ 
+  width: 100vw;
+  height: 100vh;
+  
+   /* background-color: #00F6FF;
+    width: 100vw;
+    height: 100vh;
+    border: var(--border); */
+    /* position: fixed ;
+    top: 0;
+    left: 0; */
+    
+}
+.about-page-circle{
+  
+}
+
+.about-circle{
+      background-image: radial-gradient(var(--color1),var(--color2),var(--color3));
+        width: 25vw;
+        height: 25vw;
+        border-radius: 250px;
+}
+.about-circle1{
+  position: absolute;
+  top: 45vh;
+  width: 220px;
+  height: 220px;
+  right: 250px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle2{
+  position: absolute;
+  top: 45vh;
+  width: 40px;
+  height: 40px;
+  right: 220px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+
+
+.about-circle3{
+  position: absolute;
+  top: 35vh;
+  width: 60px;
+  height: 60px;
+  right: 280px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+
+.about-circle4{
+  position: absolute;
+  top: 30vh;
+  width: 80px;
+  height: 80px;
+  right: 350px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle5{
+  position: absolute;
+  top: 15vh;
+  width: 120px;
+  height: 120px;
+  right: 250px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+
+
+.about-circle6{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 100px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle7{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 450px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle8{
+  position: absolute;
+  top: 38vh;
+  width: 140px;
+  height: 140px;
+  right: 500px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle9{
+  position: absolute;
+  top: 65vh;
+  width: 140px;
+  height: 140px;
+  right: 500px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle10{
+  position: absolute;
+  top: 55vh;
+  width: 140px;
+  height: 140px;
+  right: 650px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle6{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 100px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle6{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 100px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle6{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 100px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-circle6{
+  position: absolute;
+  top: 15vh;
+  width: 140px;
+  height: 140px;
+  right: 100px;
+  /* animation: move2 2s linear 0s; */
+  
+}
+.about-page-contant{
+  position:absolute;
+  top: 21vh;
+  left: 5vw;
+  
+  
+  
+  
+
+}
+.about-page-contant p{
+  width: 25vw;
+  color: var(--color6);
+  
+ 
+  
+}
+.about-page-contant h1{
+  color: var(--color6);
+  line-height: 35px;
+}
+.about-page-contant .image{
+  width: 45vw;
+  /* border: var(--border); */
+
+}
+.about-page-contant .image img{
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/* end  home page css code is here................................................ */
