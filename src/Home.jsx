@@ -50,8 +50,8 @@ function Home() {
           <div className="fixed-part-scroll btn1" src="#home">
             {/*  scroll btn circle 1 */}
           </div>
-          
-          
+
+
           <div className="fixed-part-scroll btn2">
             {/*  scroll btn circle 2 */}
           </div>
@@ -136,37 +136,37 @@ function Home() {
 
       {/* about section edit here */}
 
- <section className="about">
+      <section className="about">
         <div className="about-page-circle">
           <div className="about-circle about-circle1">
-             
+
           </div>
           <div className="about-circle about-circle2">
-             
+
           </div>
           <div className="about-circle about-circle3">
-             
+
           </div>
           <div className="about-circle about-circle4">
-             
+
           </div>
           <div className="about-circle about-circle5">
-             
+
           </div>
           <div className="about-circle about-circle6">
-             
+
           </div>
           <div className="about-circle about-circle7">
-             
+
           </div>
           <div className="about-circle about-circle8">
-             
+
           </div>
           <div className="about-circle about-circle9">
-             
+
           </div>
           <div className="about-circle about-circle10">
-             
+
           </div>
 
         </div>
@@ -174,10 +174,125 @@ function Home() {
           <h1>Used heading</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, unde expedita. Quae magni temporibus eligendi sed adipisci quia magnam aut!</p>
           <div className="image">
-          <img src={tensionSvg3} alt=""/>
+            <img src={tensionSvg3} alt="" />
           </div>
         </div>
-      </section> 
+      </section>
+
+      {/* end about section  */}
+
+
+
+      {/* start services page design  */}
+      <section className="services">
+
+        <div className="services-container">
+          <h1>services </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui beatae corporis autem quis animi, libero atque ullam praesentium rerum dolorum incidunt adipisci impedit aliquid ipsum.</p>
+
+          <button className="bubbly-button">START HERE</button>
+        </div>
+        <div className="image">
+          <img src={tensionSvg6} alt="" />
+        </div>
+      </section>
+
+
+
+
+
+      {/* end of services page */}
+
+      {/* contact section start here.................... */}
+      <section className="contact">
+        <div className="contact-page">
+          <div className="logo-box">
+            <div className="logo-box-part">
+              <img src="#logo" alt="logo not found" />
+
+            </div>
+            <div className="logo-box-para">
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illo! Ex illum ducimus asperiores! Nisi expedita nam debitis nostrum distinctio.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, omnis.</p>
+            </div>
+
+          </div>
+          <div className="from-box">
+            <h1>CONTACT FOR SUPPORT</h1>
+            <form action="#">
+              <div className="name-box">
+              <label htmlFor="name">name</label>
+              <input type="text" name="name" id="name" />
+           
+              </div>
+              <div className="email-box">
+              <label htmlFor="email">email</label>
+              <input type="email" name="email" id="email" />
+            
+              </div>
+               <button name="submit" value="submit">submit</button>
+            </form>
+          </div>
+          <div className="subscribe-box">
+            <h1>FOR MORE UPDATE</h1>
+            <form action="#">
+              <div className="email-subscribe-part">
+              <label htmlFor="subscribe">subscribe</label>
+              <input type="email" name="subscribe-emial" />
+              </div>
+              <button>SUBSCRIBE</button>
+            </form>
+            <div className="direct-contact">
+              <div className="email-contact">
+                <a href="mailto:careertarget@careertarget.com">
+                  <i class="fas fa-envelope-open-text"></i> careertarget@careertarget.com
+     </a>
+              </div>
+
+              <div className="phone-contact">
+                <a href="tel:+919110956664">
+                  <i class="fas fa-mobile-alt"></i> +91 9110956664
+  </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div className="copywrite">
+          <div className="social-links">
+            <a href="#facebook-link"><i class="fab fa-facebook"></i></a>
+            <a href="#instagram-link"><i class="fab fa-instagram"></i></a>
+            <a href="#twitter-link"><i class="fab fa-twitter"></i></a>
+            <a href="#youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#whatsapp-link"><i class="fab fa-whatsapp-square"></i></a>
+
+          </div>
+          <p>&#169; COPYWRITE BY <a href="#home">CAREER TARGET</a> </p>
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+
+      {/* contact section end here.................... */}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
   );

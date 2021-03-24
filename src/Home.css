@@ -1,6 +1,10 @@
 /* this is css of main page  */
 
 
+
+@import  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css";
+
+
    /* variables of css */
    :root{
        --border:1px solid black;
@@ -22,9 +26,9 @@
 }
 .mybody{
     /* position: relative; */
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; */
     background-image: radial-gradient(var(--color1),var(--color2),var(--color3));
 
     /* background: radial-gradient(circle, red, yellow, green); */
@@ -34,10 +38,10 @@
 .fixed-part{
    
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
     border: var(--border);
-    position: fixed;
+    /* position: fixed; */
     /* background-image: radial-gradient(circle, red, yellow, green); */
     /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
 
@@ -80,7 +84,7 @@
 /* start fixed scroll part design here  */
 
 .fixed-part-scroll-btns{
-    position: fixed;
+    /* position: fixed; */
    
 
 }
@@ -186,15 +190,16 @@
 /* home page section css part here ...........................................*/
 
 .home-page{
-  visibility: hidden;
+  /* visibility: hidden; */
+  position: relative;
     /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
 
     
-    /* width: 100vw;
-    height: 100vh; */
+    width: 100vw;
+    height: 100vh;
 }
 .home-page-part{
-    position: relative;
+    /* position: relative; */
 }
 /* .home-page-part-circle-div{
     position: fixed;
@@ -202,8 +207,8 @@
     left: 0;
 
 }  */
-.home-page-part-circle{
-    position: absolute;
+/* .home-page-part-circle{
+    position: relative;
     height: 150px;
     width: 150px;
     border-radius: 1500px;
@@ -281,7 +286,7 @@
     50%{top: 14vh;}
     75%{top: 18vh;}
     100%{top: 15vh;}
-}
+} */
 .first-heading-btn{
   
     position: absolute;
@@ -449,12 +454,17 @@
 
 
 
-/* home page css code is here................................................ */
+/* start about  page css code is here................................................ */
 
 .about
 { 
-  width: 100vw;
-  height: 100vh;
+  display: block;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  /* visibility: hidden; */
   
    /* background-color: #00F6FF;
     width: 100vw;
@@ -465,11 +475,11 @@
     left: 0; */
     
 }
-.about-page-circle{
+/* .about-page-circle{
   
-}
+} */
 
-.about-circle{
+/* .about-circle{
       background-image: radial-gradient(var(--color1),var(--color2),var(--color3));
         width: 25vw;
         height: 25vw;
@@ -481,7 +491,7 @@
   width: 220px;
   height: 220px;
   right: 250px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle2{
@@ -490,7 +500,7 @@
   width: 40px;
   height: 40px;
   right: 220px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 
@@ -501,7 +511,7 @@
   width: 60px;
   height: 60px;
   right: 280px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 
@@ -511,7 +521,7 @@
   width: 80px;
   height: 80px;
   right: 350px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle5{
@@ -520,7 +530,7 @@
   width: 120px;
   height: 120px;
   right: 250px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 
@@ -531,7 +541,7 @@
   width: 140px;
   height: 140px;
   right: 100px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle7{
@@ -540,7 +550,7 @@
   width: 140px;
   height: 140px;
   right: 450px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle8{
@@ -549,7 +559,7 @@
   width: 140px;
   height: 140px;
   right: 500px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle9{
@@ -558,7 +568,7 @@
   width: 140px;
   height: 140px;
   right: 500px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
 }
 .about-circle10{
@@ -567,46 +577,11 @@
   width: 140px;
   height: 140px;
   right: 650px;
-  /* animation: move2 2s linear 0s; */
+  animation: move2 2s linear 0s;
   
-}
-.about-circle6{
-  position: absolute;
-  top: 15vh;
-  width: 140px;
-  height: 140px;
-  right: 100px;
-  /* animation: move2 2s linear 0s; */
-  
-}
-.about-circle6{
-  position: absolute;
-  top: 15vh;
-  width: 140px;
-  height: 140px;
-  right: 100px;
-  /* animation: move2 2s linear 0s; */
-  
-}
-.about-circle6{
-  position: absolute;
-  top: 15vh;
-  width: 140px;
-  height: 140px;
-  right: 100px;
-  /* animation: move2 2s linear 0s; */
-  
-}
-.about-circle6{
-  position: absolute;
-  top: 15vh;
-  width: 140px;
-  height: 140px;
-  right: 100px;
-  /* animation: move2 2s linear 0s; */
-  
-}
-.about-page-contant{
+} */
+
+/* .about-page-contant{
   position:absolute;
   top: 21vh;
   left: 5vw;
@@ -615,7 +590,7 @@
   
   
 
-}
+} */
 .about-page-contant p{
   width: 25vw;
   color: var(--color6);
@@ -637,11 +612,168 @@
 }
 
 
+/* end about  page css code is here................................................ */
 
 
 
 
 
+/* start services  page css code is here................................................ */
+
+.services{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: yellow;  */
+  /* position:absolute;
+  top: 0; */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+
+  margin-right: 250px;
+
+}
+.services-container{
+  width: 25vw;
+  color: white;
+
+}
+.services img{
+  border: var(--border);
+  width: 35vw;
+}
 
 
-/* end  home page css code is here................................................ */
+
+
+
+/* contact page css code here start */
+
+.contact{
+  color: var(--color6);
+  width: 100vw;
+  height: 95vh;
+  background-color:var(--color7);
+  border-top-right-radius: 5vw;
+  border-top-left-radius: 5vw;
+  box-shadow: 5px 5px 15px gray;
+}
+.contact-page{
+  display: grid;
+  grid-template-columns: auto auto auto;
+width:100%;
+padding: 10vw 10vw 5vw 5vw;
+border: 2px solid white;
+/* border-bottom: 2px solid white; */
+height: 90%;
+}
+.logo-box{
+  /* border: 1px solid white; */
+  padding: 1.5vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.logo-box-para{
+  text-align: center;
+  margin-top: 2vw;
+}
+.from-box{
+  /* border: 1px solid white; */
+  padding: 1.5vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+
+
+}
+.from-box h1{
+  text-align: center;
+}
+.from-box form{
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid white;  
+
+}
+form .name-box{
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+  /* border: 1px solid white; */
+
+}
+form label{
+  margin: 0.2vw;
+  width: 75%;
+}
+
+form .email-box{
+  display: flex;
+  flex-direction: column;
+  margin: 0vw 2vw 2vw 2vw;
+  /* border: 1px solid white; */
+
+
+}
+
+
+.subscribe-box{
+  /* border: 1px solid white; */
+  padding: 1.5vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.subscribe-box form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2vw;
+  border: 1px solid white ;
+
+}
+.email-subscribe-part{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vw;
+
+}
+
+.direct-contact{
+  /* border: 1px solid white; */
+  margin: 1.5vw 0.25vw 2vw 0.25vw;
+}
+i{
+  /* border: 1px solid white; */
+  padding: 0 1.5vw 0 1.5vw;
+}
+.email-contact a{
+
+  text-decoration: none;
+  color: var(--color6);
+  align-items: center;
+
+
+}
+.phone-contact a{
+ 
+  text-decoration: none;
+  color: var(--color6);
+  
+  align-items: center;
+
+
+
+}
+
+
+
+/* contact page css code here end */
+
