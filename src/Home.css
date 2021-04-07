@@ -1,205 +1,187 @@
 /* this is css of main page  */
 
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css";
 
-
-@import  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css";
-
-
-   /* variables of css */
-   :root{
-       --border:1px solid black;
-       --color1:#00F6FF;
-       --color2:#2007FC;
-       --color3:#022587;
-       --color4:#CC1515;
-       --color5:#801B01;
-       --color6:white;
-       --color7:black;
-       --text-shadow: 0.2px 5px 10px gray;
-
-   }
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* variables of css */
+:root {
+  --border: 1px solid black;
+  --color1: #00f6ff;
+  --color2: #2007fc;
+  --color3: #022587;
+  --color4: #cc1515;
+  --color5: #801b01;
+  --color6: white;
+  --color7: black;
+  --text-shadow: 0.2px 5px 10px gray;
 }
-.mybody{
-    /* position: relative; */
-    /* width: 100vw;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mybody {
+  /* position: relative; */
+  /* width: 100vw;
     height: 100vh;
     overflow: hidden; */
-    background-image: radial-gradient(var(--color1),var(--color2),var(--color3));
+  background-image: radial-gradient(var(--color1), var(--color2));
 
-    /* background: radial-gradient(circle, red, yellow, green); */
+  /* background: radial-gradient(circle, red, yellow, green); */
 }
 
 /* design fixed part */
-.fixed-part{
-   
-    font-family: Arial, Helvetica, sans-serif;
-    /* height: 100vh;
+.fixed-part {
+  font-family: Arial, Helvetica, sans-serif;
+  /* height: 100vh;
     width: 100vw; */
-    border: var(--border);
-    /* position: fixed; */
-    /* background-image: radial-gradient(circle, red, yellow, green); */
-    /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
-
+  border: var(--border);
+  /* position: fixed; */
+  /* background-image: radial-gradient(circle, red, yellow, green); */
+  /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
 }
 /* fixed part header design code is here */
-.fixed-part-header{
-    position: fixed;
-    width: 100vw;
-   
-    display: flex;
-    justify-content: space-between;
-    padding: 45px 5.5vw 45px 5.5vw;
+.fixed-part-header {
+  position: fixed;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 5.5vw 45px 5.5vw;
 }
-.fixed-part-header nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fixed-part-header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.fixed-part-header nav li{
-    list-style: none;
-    /* border: var(--border); */
-    margin: 0 2vw 0 2vw;
+.fixed-part-header nav li {
+  list-style: none;
+  /* border: var(--border); */
+  margin: 0 2vw 0 2vw;
 }
-.fixed-part-header nav li a{
-    text-shadow: var(--text-shadow);
-    text-decoration: none;
-    color: var(--color6);
-    font-weight: bold;
+.fixed-part-header nav li a {
+  /* text-shadow: var(--text-shadow); */
+  text-decoration: none;
+  color: var(--color6);
+  font-weight: bold;
 }
-#sign-up-id{
-    background-color: var(--color4);
-    border-radius: 5vw;
-    padding:1vw 1.5vw 1vw 1.5vw;
-    text-shadow: var(--text-shadow);
+#sign-up-id {
+  background-color: var(--color4);
+  border-radius: 5vw;
+  padding: 1vw 1.5vw 1vw 1.5vw;
+  /* text-shadow: var(--text-shadow); */
 }
 
 /* end ... fixed part header design code is here */
 
-
 /* start fixed scroll part design here  */
 
-.fixed-part-scroll-btns{
-    /* position: fixed; */
-   
-
+.fixed-part-scroll-btns {
+  /* position: fixed; */
 }
-.fixed-part-scroll{
-   z-index: 25;
-    position: fixed;
-    right: 5vw;
-    width: 20px;
-    border-radius: 50px;
-    box-shadow: 1px 1px 50px gray;
-    height: 20px;
-    background-image: radial-gradient(var(--color1),var(--color2),#020c25);
-    
-}
-.btn1{
-    top: 40vh;
-    
-    transform: translate(-50%,-50%);
-
-}
- .btn1:hover::before{
-    z-index: 25;
-    content: "HOME";
-    font-size: 15px;
-    position: absolute;
-    color: var(--color6);
-    font-weight: bold;
-    top: -3px;
-    left: -96px;
-    box-shadow: var(--text-shadow);
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;
-    background-color: var(--color4);
-   }
-    
-
-.btn2{
-    top: 48vh;
-    transform: translate(-50%,-50%);
-
-}
-.btn2:hover::before{
+.fixed-part-scroll {
   z-index: 25;
-    content: "ABOUT";
-    font-size: 15px;
-    position: absolute;
-    color: var(--color6);
-    font-weight: bold;
-    top: -3px;
-    left: -102px;
-    box-shadow: var(--text-shadow);
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;
-    background-color: var(--color4);
-    
+  position: fixed;
+  right: 5vw;
+  width: 20px;
+  border-radius: 50px;
+  /* box-shadow: 1px 1px 50px gray; */
+  height: 20px;
+  /* background: transparent; */
+  background-image: radial-gradient(
+    #022587 30%,
+    var(--color2) 10%,
+    var(--color1) 80%
+  );
 }
-.btn3{
-    top:56vh;
-    transform: translate(-50%,-50%);
+.btn1 {
+  top: 40vh;
 
+  transform: translate(-50%, -50%);
 }
-.btn3:hover::before{
+.btn1:hover::before {
   z-index: 25;
-    content: "SERVICES";
-    font-size: 15px;
-    position: absolute;
-    color: var(--color6);
-    font-weight: bold;
-    top: -3px;
-    left: -120px;
-    box-shadow: var(--text-shadow);
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;
-    background-color: var(--color4);
-    
+  content: "HOME";
+  font-size: 15px;
+  position: absolute;
+  color: var(--color6);
+  font-weight: bold;
+  top: -3px;
+  left: -96px;
+  box-shadow: var(--text-shadow);
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color4);
 }
-.btn4{
-    top: 64vh;
-    transform: translate(-50%,-50%);
 
+.btn2 {
+  top: 48vh;
+  transform: translate(-50%, -50%);
 }
-.btn4:hover::before{
+.btn2:hover::before {
   z-index: 25;
-    content: "CONTACT";
-    font-size: 15px;
-    position: absolute;
-    color: var(--color6);
-    font-weight: bold;
-    top: -3px;
-    left: -116px;
-    box-shadow: var(--text-shadow);
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;
-    background-color: var(--color4);
-    
+  content: "ABOUT";
+  font-size: 15px;
+  position: absolute;
+  color: var(--color6);
+  font-weight: bold;
+  top: -3px;
+  left: -102px;
+  box-shadow: var(--text-shadow);
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color4);
+}
+.btn3 {
+  top: 56vh;
+  transform: translate(-50%, -50%);
+}
+.btn3:hover::before {
+  z-index: 25;
+  content: "SERVICES";
+  font-size: 15px;
+  position: absolute;
+  color: var(--color6);
+  font-weight: bold;
+  top: -3px;
+  left: -120px;
+  box-shadow: var(--text-shadow);
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color4);
+}
+.btn4 {
+  top: 64vh;
+  transform: translate(-50%, -50%);
+}
+.btn4:hover::before {
+  z-index: 25;
+  content: "CONTACT";
+  font-size: 15px;
+  position: absolute;
+  color: var(--color6);
+  font-weight: bold;
+  top: -3px;
+  left: -116px;
+  box-shadow: var(--text-shadow);
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  background-color: var(--color4);
 }
 /* end fixed scroll part design here ................................ */
 
-
-
-
-
 /* home page section css part here ...........................................*/
 
-.home-page{
+.home-page {
   /* visibility: hidden; */
   position: relative;
-    /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
+  /* background-image: radial-gradient(var(--color1),var(--color2),var(--color3)); */
 
-    
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
-.home-page-part{
-    /* position: relative; */
+.home-page-part {
+  /* position: relative; */
 }
 /* .home-page-part-circle-div{
     position: fixed;
@@ -287,23 +269,20 @@
     75%{top: 18vh;}
     100%{top: 15vh;}
 } */
-.first-heading-btn{
-  
-    position: absolute;
-    z-index: 10;
-    top: 50vh;
-    left: 50vw;
-    text-align: center;
-    transform: translate(-50%,-50%);
-
+.first-heading-btn {
+  position: absolute;
+  z-index: 10;
+  top: 50vh;
+  left: 50vw;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
-.first-heading-btn h1{
-    font-size: 6vw;
-    color: var(--color6);
-    text-shadow: var(--text-shadow);
-    text-transform: uppercase;
-    line-height: 6vw;
-   
+.first-heading-btn h1 {
+  font-size: 6vw;
+  color: var(--color6);
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  line-height: 6vw;
 }
 
 /* .first-heading-btn a{
@@ -318,146 +297,173 @@
 /* bubble button code here */
 
 .bubbly-button {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    display: inline-block;
-    font-size: 1em;
-    padding: 1em 2em;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-    background-color:var(--color4);
-    color: var(--color6);
-    border-radius: 400px;
-    border: none;
-    text-shadow: var(--text-shadow);
-    cursor: pointer;
-    position: relative;
-    -webkit-transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
-    transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s, -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
-    -webkit-box-shadow: 0 2px 25px gray;
-            box-shadow: 0 2px 25px gray;
-  }
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--color4);
+  color: var(--color6);
+  border-radius: 400px;
+  border: 2px solid;
+  /* text-shadow: var(--text-shadow); */
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform ease-in 0.1s,
+    -webkit-box-shadow ease-in 0.25s;
+  transition: -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s,
+    -webkit-transform ease-in 0.1s, -webkit-box-shadow ease-in 0.25s;
+  -webkit-box-shadow: 0 2px 25px gray;
+  box-shadow: 0 2px 25px gray;
+}
 
 .bubbly-button:focus {
-    outline: 0;
-  }
-  
-  .bubbly-button:before, .bubbly-button:after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 140%;
-    height: 100%;
-    left: -20%;
-    z-index: -1000;
-    -webkit-transition: all ease-in-out 0.5s;
-    transition: all ease-in-out 0.5s;
-    background-repeat: no-repeat;
-  }
-  
-.bubbly-button:before {
-    display: none;
-    top: -75%;
-    background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--color4) 20%, transparent 30%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%);
-    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
-  }
-  
+  outline: 0;
+}
+
+.bubbly-button:before,
 .bubbly-button:after {
-    display: none;
-    bottom: -75%;
-    background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%), radial-gradient(circle, var(--color4) 20%, transparent 20%);
-    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
-  }
-  
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--color4) 20%, transparent 30%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+}
+
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--color4) 15%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%),
+    radial-gradient(circle, var(--color4) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
 .bubbly-button:active {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    background-color: var(--color5);
-    -webkit-box-shadow: 0 2px 25px gray;
-            box-shadow: 0 2px 25px gray;
-  }
-  
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  background-color: var(--color5);
+  -webkit-box-shadow: 0 2px 25px gray;
+  box-shadow: 0 2px 25px gray;
+}
+
 .bubbly-button.animate:before {
-    display: block;
-    -webkit-animation: topBubbles ease-in-out 0.75s forwards;
-            animation: topBubbles ease-in-out 0.75s forwards;
-  }
-  
+  display: block;
+  -webkit-animation: topBubbles ease-in-out 0.75s forwards;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
 .bubbly-button.animate:after {
-    display: block;
-    -webkit-animation: bottomBubbles ease-in-out 0.75s forwards;
-            animation: bottomBubbles ease-in-out 0.75s forwards;
-  }
-  
-  @-webkit-keyframes topBubbles {
-    0% {
-      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-    }
-    50% {
-      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-    }
-    100% {
-      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-    }
-  }
-  
-  @keyframes topBubbles {
-    0% {
-      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-    }
-    50% {
-      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-    }
-    100% {
-      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-    }
-  }
-  
-  @-webkit-keyframes bottomBubbles {
-    0% {
-      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-    }
-    50% {
-      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-    }
-    100% {
-      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-    }
-  }
-  
-  @keyframes bottomBubbles {
-    0% {
-      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-    }
-    50% {
-      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-    }
-    100% {
-      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-    }
-  }
+  display: block;
+  -webkit-animation: bottomBubbles ease-in-out 0.75s forwards;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
 
-  #login-btn-heading{
-      margin-left: 25px;
-      background-color: var(--color5);
+@-webkit-keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
   }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@-webkit-keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#login-btn-heading {
+  margin-left: 25px;
+  background-color: var(--color5);
+}
 /* end home page section css part here............................. */
-
-
 
 /* start about  page css code is here................................................ */
 
-.about
-{ 
+.about {
   display: block;
   /* position: absolute; */
   top: 0;
@@ -465,15 +471,14 @@
   /* width: 100vw;
   height: 100vh; */
   /* visibility: hidden; */
-  
-   /* background-color: #00F6FF;
+
+  /* background-color: #00F6FF;
     width: 100vw;
     height: 100vh;
     border: var(--border); */
-    /* position: fixed ;
+  /* position: fixed ;
     top: 0;
     left: 0; */
-    
 }
 /* .about-page-circle{
   
@@ -591,36 +596,27 @@
   
 
 } */
-.about-page-contant p{
+.about-page-contant p {
   width: 25vw;
   color: var(--color6);
-  
- 
-  
 }
-.about-page-contant h1{
+.about-page-contant h1 {
   color: var(--color6);
   line-height: 35px;
 }
-.about-page-contant .image{
+.about-page-contant .image {
   width: 45vw;
   /* border: var(--border); */
-
 }
-.about-page-contant .image img{
+.about-page-contant .image img {
   padding: 0;
 }
 
-
 /* end about  page css code is here................................................ */
-
-
-
-
 
 /* start services  page css code is here................................................ */
 
-.services{
+.services {
   width: 100vw;
   height: 100vh;
   /* background-color: yellow;  */
@@ -631,99 +627,85 @@
   align-items: center;
 
   margin-right: 250px;
-
 }
-.services-container{
+.services-container {
   width: 25vw;
   color: white;
-
 }
-.services img{
+.services img {
   border: var(--border);
   width: 35vw;
 }
 
-
-
-
-
 /* contact page css code here start */
 
-.contact{
+.contact {
   color: var(--color6);
   width: 100vw;
   height: 95vh;
-  background-color:var(--color7);
+  background-color: var(--color7);
   border-top-right-radius: 5vw;
   border-top-left-radius: 5vw;
   box-shadow: 5px 5px 15px gray;
 }
-.contact-page{
+.contact-page {
   display: grid;
   grid-template-columns: auto auto auto;
-width:100%;
-padding: 10vw 10vw 5vw 5vw;
-border: 2px solid white;
-/* border-bottom: 2px solid white; */
-height: 90%;
+  width: 100%;
+  padding: 10vw 10vw 5vw 5vw;
+  border: 2px solid white;
+  /* border-bottom: 2px solid white; */
+  height: 90%;
 }
-.logo-box{
+.logo-box {
   /* border: 1px solid white; */
   padding: 1.5vw;
   display: flex;
   /* justify-content: center; */
   align-items: flex-start;
   flex-direction: column;
-
 }
-.logo-box-para{
+.logo-box-para {
   text-align: center;
   margin-top: 2vw;
 }
-.from-box{
+.from-box {
   /* border: 1px solid white; */
   padding: 1.5vw;
   display: flex;
   /* justify-content: center; */
   align-items: flex-start;
   flex-direction: column;
-
-
 }
-.from-box h1{
+.from-box h1 {
   text-align: center;
 }
-.from-box form{
+.from-box form {
   margin-top: 2vw;
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid white;  
-
+  border: 1px solid white;
 }
-form .name-box{
+form .name-box {
   display: flex;
   flex-direction: column;
   margin: 2vw;
   /* border: 1px solid white; */
-
 }
-form label{
+form label {
   margin: 0.2vw;
   width: 75%;
 }
 
-form .email-box{
+form .email-box {
   display: flex;
   flex-direction: column;
   margin: 0vw 2vw 2vw 2vw;
   /* border: 1px solid white; */
-
-
 }
 
-
-.subscribe-box{
+.subscribe-box {
   /* border: 1px solid white; */
   padding: 1.5vw;
   display: flex;
@@ -731,49 +713,37 @@ form .email-box{
   align-items: flex-start;
   flex-direction: column;
 }
-.subscribe-box form{
+.subscribe-box form {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 2vw;
-  border: 1px solid white ;
-
+  border: 1px solid white;
 }
-.email-subscribe-part{
+.email-subscribe-part {
   display: flex;
   flex-direction: column;
   padding: 1.5vw;
-
 }
 
-.direct-contact{
+.direct-contact {
   /* border: 1px solid white; */
   margin: 1.5vw 0.25vw 2vw 0.25vw;
 }
-i{
+i {
   /* border: 1px solid white; */
   padding: 0 1.5vw 0 1.5vw;
 }
-.email-contact a{
-
+.email-contact a {
   text-decoration: none;
   color: var(--color6);
   align-items: center;
-
-
 }
-.phone-contact a{
- 
+.phone-contact a {
   text-decoration: none;
   color: var(--color6);
-  
+
   align-items: center;
-
-
-
 }
-
-
 
 /* contact page css code here end */
-

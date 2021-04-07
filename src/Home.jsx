@@ -1,5 +1,7 @@
 import './Home.css';
+import About from './About'
 import React, { Component } from 'react';
+import SignUp from './SignUp';
 import ReactDOM from 'react-dom';
 import tensionSvg1 from './student svgs/1 SCENE.svg';
 import tensionSvg2 from './student svgs/2 SCENE.svg';
@@ -38,21 +40,21 @@ function Home() {
           {/* nav part of project */}
           <nav>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#About">ABOUT</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#sign-up" id="sign-up-id">SIGN UP</a></li>
+            <li><a href={SignUp} id="sign-up-id">SIGN UP</a></li>
             <li><a href="#login" id='login-id'>LOGIN</a></li>
           </nav>
         </div>
         {/* scroll button part here */}
         <div className="fixed-part-scroll-btns">
-          <div className="fixed-part-scroll btn1" src="#home">
+          <div className="fixed-part-scroll btn1" src={Home}>
             {/*  scroll btn circle 1 */}
           </div>
 
 
-          <div className="fixed-part-scroll btn2">
+          <div className="fixed-part-scroll btn2" to={About}>
             {/*  scroll btn circle 2 */}
           </div>
           <div className="fixed-part-scroll btn3">
@@ -64,7 +66,6 @@ function Home() {
         </div>
       </section>
       {/* fixed part of project end .   ..........................................................*/}
-
 
 
 
