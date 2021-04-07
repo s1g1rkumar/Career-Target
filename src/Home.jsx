@@ -47,6 +47,9 @@ function Home() {
             <li><a href="#login" id='login-id'>LOGIN</a></li>
           </nav>
         </div>
+          <h1>this is heading1</h1>
+        <div>
+
         {/* scroll button part here */}
         <div className="fixed-part-scroll-btns">
           <div className="fixed-part-scroll btn1" src={Home}>
