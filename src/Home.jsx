@@ -32,6 +32,9 @@ import tensionSvg10 from './student svgs/10 SCENE.svg';
 function Home() {
   return (
     <div className="mybody" >
+
+
+      {/* ho ja rha h bhai lllllll ha hahahahhaahhahahaha aahahah */}
       {/* <h1>thisifoishghlghldghlh</h1> */}
       {/* fixed part of project like header scroll btn and social meadia parts not disign (bad me design krege) */}
       <section className="fixed-part">
