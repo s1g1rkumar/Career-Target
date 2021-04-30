@@ -1,21 +1,16 @@
-.body {
-  background-color: #ebf5fb;
-}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 .h-text {
-  font-size: 70px;
+  font-size: 6vw;
+  font-family: "Abril Fatface";
 }
 .h-desc {
   font-size: 20px;
 }
 .h-btn {
   padding: 10px 30px 10px 30px;
-  align-items: center;
-  justify-content: center;
-  border-style: none;
-  border: 1px solid red;
-  border-radius: 15% 15% 15% 15%;
 }
 .cp-img {
-  height: 10vh;
-  width: 20vw;
+  height: 80vh;
+  width: 70vw;
 }

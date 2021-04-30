@@ -18,7 +18,7 @@ function Header() {
                             <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#signinModal" id='sign-in' value='signin'>Sign In</button>
                             </li>
                             <li className="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#signinModal" id='sign-up' value='signup'>Sign Up</button>
+                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#signupModal" id='sign-up' value='signup'>Sign Up</button>
                             </li>   
                         </ul>
     
@@ -26,10 +26,10 @@ function Header() {
             <div className="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
-                  <div className="modal-header">
-                
-                   
-                    {/* Navs */}
+                  <div className="modal-header bg-light">
+                  <div><img src={logo} alt="logo" height='100px'width='400px' /></div>
+                   {/* <div>
+                    
                     <nav>
                         <div className="nav nav-tabs" id="nav-tab" role="tablist">
                           <button className={`nav-link active`} id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Sign IN</button>
@@ -37,17 +37,56 @@ function Header() {
                           <button className={`nav-link`} id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign UP</button>
                         </div>
                     </nav>
+                   </div> */}
+                    
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div className="modal-body">
-                    <div className="tab-content" id="nav-tabContent">
+                    {/* <div className="tab-content" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><SignIn/></div>
 
                         <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><SignUp/>
                           </div>
-                    </div>
+                    </div> */}
+                    <SignIn/>
                   </div>
-                  <div className="modal-footer">
+                  <div className="modal-footer bg-light">
+                      {/* model footer  */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header bg-light">
+                  <div><img src={logo} alt="logo" height='100px'width='400px' /></div>
+                   {/* <div>
+                    
+                    <nav>
+                        <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button className={`nav-link active`} id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Sign IN</button>
+
+                          <button className={`nav-link`} id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sign UP</button>
+                        </div>
+                    </nav>
+                   </div> */}
+                    
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div className="modal-body">
+                    {/* <div className="tab-content" id="nav-tabContent">
+                        <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><SignIn/></div>
+
+                        <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><SignUp/>
+                          </div>
+                    </div> */}
+                    <SignUp/>
+                  </div>
+                  <div className="modal-footer bg-light">
                       {/* model footer  */}
                   </div>
                 </div>
