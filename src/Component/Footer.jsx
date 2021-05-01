@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Footer.css';
-import {Link,BrowserRouter as Router} from 'react-router-dom'; 
+import {NavLink,BrowserRouter as Router} from 'react-router-dom'; 
 import '../CSS/Footer.css';
 
 function Footer() {
@@ -12,14 +12,14 @@ function Footer() {
                         <div className="col-6">
                             <Router>
                                 <div className="row">
-                                    <div className="col-2"><Link to='/'>Home</Link></div>
+                                    <div className="col-2"><NavLink to='/'>Home</NavLink></div>
                                     <div className="col-2">
-                                    <Link to='/services'>Services</Link>
+                                    <NavLink to='/services'>Services</NavLink>
                                     </div>
                                     <div className="col-2">
-                                    <Link to='/about'>About Us</Link>
+                                    <NavLink to='/about'>About Us</NavLink>
                                     </div>
-                                    <div className="col-3"><Link to='/contact'>Contact Us</Link></div>
+                                    <div className="col-3"><NavLink to='/contact'>Contact Us</NavLink></div>
                                 </div>
                             </Router>
                         </div>

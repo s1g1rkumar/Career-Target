@@ -1,6 +1,5 @@
-import {React,useState} from 'react';
-import state from 'react-dom';
-import {Link,BrowserRouter as Router} from 'react-router-dom';
+import {React} from 'react';
+import {NavLink,BrowserRouter as Router} from 'react-router-dom';
 import '../CSS/MainBody.css';
 import careerProgress from '../Images/careerProgress.svg';
 import Devtypes from '../Component/DevelopmentTypes';
@@ -24,12 +23,12 @@ function MainBody() {
                         <br/><br/>
                         {/* <button className='h-btn text-center'>Let's Start</button> */}
                         <div className=''>
-                            <Router>
-                            <Link to='/devtypes'>
+                            {/* <Router> */}
+                            <NavLink to='/devtypes'>
                         <button type="button md-mr-5" className="btn btn-danger  h-btn" id='h-start' onClick=''>Let's Start</button>
 
-                        </Link>
-                        </Router>
+                        </NavLink>
+                        {/* </Router> */}
                         </div>                      
                     </div>
                     <div className="col-sm-12 col-md-7 pt-5">

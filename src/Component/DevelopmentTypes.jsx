@@ -8,7 +8,6 @@ import mobile from '../Images/mobile-dev.svg';
 function DevelopmentTypes() {
   return (
     <>
-      <Header/>
       <div className="container-fluid body">
             <div className="container">
                 <div className="row pt-5 pb-5">
@@ -69,7 +68,6 @@ function DevelopmentTypes() {
 
         </div>
 
-        <Footer/>
     </>
   )
 }

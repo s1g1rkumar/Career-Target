@@ -5,9 +5,7 @@ import MainBody from '../Component/MainBody';
 function Home() {
   return (
     <>
-      <Header></Header>
       <MainBody></MainBody>
-      <Footer></Footer>
     </>
   )
 }
