@@ -7,9 +7,7 @@ import Devtypes from '../Component/DevelopmentTypes';
 
 
 function MainBody() {
-    const User = () => {
-        return <Devtypes/>
-      }
+    
       
     return (
        <>

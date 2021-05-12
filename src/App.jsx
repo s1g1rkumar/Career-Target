@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Switch,Route,Redirect} from 'react-router-dom';
+import {Switch,Route,Redirect,withRouter} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
@@ -10,6 +10,8 @@ import Services from './Component/Services';
 import Contact from './Component/Contact';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
+import Webdev from './Component/Webdev';
+import Frontend from './Component/FrontendPanel';
 
 
 function App() {
@@ -17,17 +19,17 @@ function App() {
     
     <div className="app">
     <Header/>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
       <div>
         <Switch>
-	<Route exact path="/">
-            <Home/>
+        	<Route exact path="/" component={Home}>
+            {/* <Home/> */}
           </Route>
           <Route exact path="/about">
             <About/>
           </Route>
-          <Route exact path="/contact">
-            <Contact />
+          <Route exact path="/contact" component={Contact}>
+            {/* <Contact /> */}
           </Route>
           <Route exact path="/services">
             <Services/>
@@ -35,10 +37,16 @@ function App() {
           <Route exact path="/devtypes">
             <Devtypes/>
           </Route>
+          <Route exact path="/webdev">
+            <Webdev/>
+          </Route>
+          <Route exact path="/frontend">
+            <Frontend/>
+          </Route>
 	  <Redirect to='/'/>
         </Switch>
       </div>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
       <Footer/>
     </div>
   );

@@ -5,6 +5,7 @@ import Footer from '../Component/Footer';
 import webdev from '../Images/web-dev.svg';
 import desktop from '../Images/desktop-dev.svg';
 import mobile from '../Images/mobile-dev.svg';
+import { NavLink } from 'react-router-dom';
 function DevelopmentTypes() {
   return (
     <>
@@ -18,7 +19,9 @@ function DevelopmentTypes() {
                         <br/><br/>
                         {/* <button className='h-btn text-center'>Let's Start</button> */}
                         <div className=''>
-                        <button type="button md-mr-5" className="btn btn-danger  h-btn1" >Let's Start</button>
+                        <NavLink to='/webdev'>
+                        <button type="button md-mr-5" className="btn btn-danger  h-btn1">Let's Start</button>
+                        </NavLink>
                         </div>                      
                     </div>
                     <div className="col-sm-12 col-md-7 ">
